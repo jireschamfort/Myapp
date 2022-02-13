@@ -1,19 +1,39 @@
 pipeline {
-    agent { 
-    label("Node1")
-    }
+    agent {
+                label ("Node1")
+            }
+
     stages {
-        stage('build') {
+     
+
+         stage('Valading code syntax') {
             steps {
-                echo ("je vous salut")
+                echo 'Hello'
+                sh 'sleep 2'
             }
         }
-    }
-    stages {
-        stage('build') {
+
+
+
+         stage('testing code') {
             steps {
-                echo"Salut les cocos"
+                echo 'Hello World'
+                sh 'sleep 2'
             }
         }
-    }
-}
+
+
+         stage('Junit report') {
+            steps {
+                echo 'Hello World'
+                sh 'sleep 2'
+            }
+        }
+        
+
+         stage('Sonarqube analysis') {
+            steps {
+                echo 'Hello World'
+                sh 'sleep 2'
+            }
+        }
