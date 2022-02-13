@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo 'Hello'
                 sh 'sleep 2'
-                sh 'java --version'
+                sh 'java -version'
             }
         }
 
