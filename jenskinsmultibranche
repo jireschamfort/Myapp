@@ -1,38 +1,9 @@
 pipeline {
     agent any
-    stages {
-     
-
-         stage('Valading code syntax') {
+     stage('Valading code syntax') {
             steps {
-                echo 'Hello'
-                sh 'sleep 2'
-                sh 'java -version'
+                
             }
-        }
-
-
-
-         stage('testing code') {
-            steps {
-                echo 'Hello World'
-                sh 'sleep 2'
-            }
-        }
-
-
-         stage('Junit report') {
-            steps {
-                echo 'Hello World'
-                sh 'sleep 2'
-            }
-        }
         
 
-         stage('Sonarqube analysis') {
-            steps {
-                echo 'Hello World'
-                sh 'sleep 2'
-            }
-        }
 }
